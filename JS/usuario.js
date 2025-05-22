@@ -81,12 +81,12 @@ function showModalUser(user) {
                     </div>
                     <div class="modal-body">
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Avatar user">
                             <div class="card-body">
                                 <h5 class="card-title">User Info</h5>
                                 <p class="card-text">First name: ${user.name.firstname}</p>
                                 <p class="card-text">Last name: ${user.name.lastname}</p>
                                 <p class="card-text">Email: ${user.email}</p>
+                                <p class="card-text">Phone: ${user.phone}</p>
                             </div>
                         </div>
                     </div>
