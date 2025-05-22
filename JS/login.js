@@ -25,7 +25,14 @@ function login(username, password){
             alerType = 'success'
             message = 'Inicio de sesión exitoso';
             console.log('Responde bien' + response)
-            alertBuilder(alerType, message)        
+            alertBuilder(alerType, message)
+            response.json().then((data) => {
+                localStorage.setItem('token', data.token)
+            })
+            setTimeout(() => {
+                location.href = 'admin/dashboard.html'
+            }, 2000) //2000 ms = 2 seg           
+                
         }
         else{
             alerType = 'danger'
